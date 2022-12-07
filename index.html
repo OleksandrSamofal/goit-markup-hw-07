@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header -->
@@ -25,17 +25,10 @@
         <nav>
           <ul class="site-nav list">
             <li class="item">
-              <a
-                class="link-header current"
-                href="./index.html"
-                class="menu-link"
-                >Студія</a
-              >
+              <a class="link-header current" href="./index.html" class="menu-link">Студія</a>
             </li>
             <li class="item">
-              <a class="link-header" href="./portfolio.html" class="menu-link"
-                >Портфоліо</a
-              >
+              <a class="link-header" href="./portfolio.html" class="menu-link">Портфоліо</a>
             </li>
             <li class="item">
               <a class="link-header" href="#" class="menu-link">Контакти</a>
@@ -44,10 +37,7 @@
         </nav>
         <ul class="header-nav list">
           <li class="item icon-envelope">
-            <a
-              class="header-mail envelope-link"
-              href="mailto:info@devstudio.com"
-            >
+            <a class="header-mail envelope-link" href="mailto:info@devstudio.com">
               <svg class="header-mail" width="16" height="12">
                 <use href="./image/icons.svg#envelope"></use>
               </svg>
@@ -59,9 +49,7 @@
             <svg class="header-contact" width="10" height="16">
               <use href="./image/icons.svg#smartphone"></use>
             </svg>
-            <a class="header-contact smartphone-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="header-contact smartphone-link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -74,9 +62,7 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="button-hero pointer" type="button" data-modal-open>
-            Замовити послугу
-          </button>
+          <button class="button-hero pointer" type="button" data-modal-open> Замовити послугу </button>
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
@@ -88,12 +74,7 @@
               <div class="form-field">
                 <label for="name" class="form-label">Ім'я</label>
 
-                <input
-                  class="form-input"
-                  type="text"
-                  name="user-name"
-                  id="name"
-                />
+                <input class="form-input" type="text" name="user-name" id="name" />
                 <span class="icon">
                   <svg class="icon-modal">
                     <use href="./image/icons.svg#person-modal"></use>
@@ -115,12 +96,7 @@
               <div class="form-field">
                 <label for="mail" class="form-label">Пошта</label>
 
-                <input
-                  class="form-input"
-                  type="email"
-                  name="user-mail"
-                  id="mail"
-                />
+                <input class="form-input" type="email" name="user-mail" id="mail" />
                 <span class="icon">
                   <svg class="icon-modal">
                     <use href="./image/icons.svg#email-modal"></use>
@@ -130,29 +106,14 @@
 
               <div class="form-field">
                 <label for="comment">Коментар</label>
-                <textarea
-                  class="comment"
-                  name="comment"
-                  id="comment"
-                  placeholder="Введіть текст"
-                  rows="5"
-                ></textarea>
+                <textarea class="comment" name="comment" id="comment" placeholder="Введіть текст" rows="5"></textarea>
               </div>
 
               <div class="policyty">
                 <label class="field" for="agree">
-                  <input
-                    class="checkbox"
-                    type="checkbox"
-                    name="agree"
-                    value=""
-                    id="agree"
-                  />
-                  <span class="icon-checked"></span> Погоджуюся з розсилкою та
-                  приймаю
-                  <span class="label"
-                    ><a class="terms" href="#">Умови договору</a></span
-                  ></label
+                  <input class="checkbox" type="checkbox" name="agree" value="" id="agree" />
+                  <span class="icon-checked"></span> Погоджуюся з розсилкою та приймаю
+                  <span class="label"><a class="terms" href="#">Умови договору</a></span></label
                 >
               </div>
 
@@ -173,30 +134,19 @@
           <ul class="feature-list list">
             <li class="item icon-antenna">
               <h3 class="section-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="section-two">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
+              <p class="section-two"> Ідейні міркування, і навіть початок повсякденної роботи з формування позиції. </p>
             </li>
             <li class="item icon-clock">
               <h3 class="section-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="section-two">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
+              <p class="section-two"> Завдання організації, особливо рамки і місце навчання кадрів тягне у себе. </p>
             </li>
             <li class="item icon-diagram">
               <h3 class="section-title">ПЛАНУВАННЯ</h3>
-              <p class="section-two">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
+              <p class="section-two"> Так само консультація з широким активом значною мірою зумовлює. </p>
             </li>
             <li class="item icon-astronaut">
               <h3 class="section-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="section-two">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
+              <p class="section-two"> Значимість цих проблем настільки очевидна, що реалізація планових завдань. </p>
             </li>
           </ul>
         </div>
@@ -240,12 +190,7 @@
           <div class="team-text">
             <ul class="cards list team-list">
               <li class="card">
-                <img
-                  class="card-image"
-                  src="./image/worker1.jpg"
-                  alt="Product Designer"
-                  width="270"
-                />
+                <img class="card-image" src="./image/worker1.jpg" alt="Product Designer" width="270" />
                 <div class="members">
                   <h3 class="card-title">Ігор Дем'яненко</h3>
                   <p class="card-description">Product Designer</p>
@@ -285,12 +230,7 @@
               </li>
 
               <li class="card">
-                <img
-                  class="card-image"
-                  src="./image/worker2.jpg"
-                  alt="Frontend Developer"
-                  width="270"
-                />
+                <img class="card-image" src="./image/worker2.jpg" alt="Frontend Developer" width="270" />
                 <div class="members">
                   <h3 class="card-title">Ольга Рєпіна</h3>
                   <p class="card-description">Frontend Developer</p>
@@ -330,12 +270,7 @@
               </li>
 
               <li class="card">
-                <img
-                  class="card-image"
-                  src="./image/worker3.jpg"
-                  alt="Marketing"
-                  width="270"
-                />
+                <img class="card-image" src="./image/worker3.jpg" alt="Marketing" width="270" />
                 <div class="members">
                   <h3 class="card-title">Микола Тарасов</h3>
                   <p class="card-description">Marketing</p>
@@ -374,12 +309,7 @@
                 </div>
               </li>
               <li class="card">
-                <img
-                  class="card-image"
-                  src="./image/worker4.jpg"
-                  alt="UI Designer"
-                  width="270"
-                />
+                <img class="card-image" src="./image/worker4.jpg" alt="UI Designer" width="270" />
                 <div class="members">
                   <h3 class="card-title">Михайло Єрмаков</h3>
                   <p class="card-description">UI Designer</p>
@@ -421,6 +351,7 @@
           </div>
         </div>
       </section>
+      <!-- section 5 Постійні клієнти -->
       <section class="section">
         <div class="container">
           <h2 class="section-five">Постійні клієнти</h2>
@@ -475,25 +406,17 @@
     <footer class="footer-section">
       <div class="container footer-container">
         <div class="wrapper">
-          <a href="#" class="logo-footer"
-            ><span class="logo-color">Web</span>Studio</a
-          >
+          <a href="#" class="logo-footer"><span class="logo-color">Web</span>Studio</a>
           <address>
             <ul class="list">
               <li>
-                <a class="footer-adress" href="#"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                <a class="footer-adress" href="#">м. Київ, пр-т Лесі Українки, 26</a>
               </li>
               <li>
-                <a class="footer-contact" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+                <a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
               <li class="tel">
-                <a class="footer-contact" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+                <a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -534,16 +457,8 @@
         <div>
           <form class="form-subscribe" action="">
             <div class="form-field-footer">
-              <label class="subscribe-text" for="text"
-                >Підпишіться на розсилку</label
-              >
-              <input
-                class="subscribe-input"
-                type="email"
-                name="user-mail"
-                id="email"
-                placeholder="E-mail"
-              />
+              <label class="subscribe-text" for="text">Підпишіться на розсилку</label>
+              <input class="subscribe-input" type="email" name="user-mail" id="email" placeholder="E-mail" />
             </div>
             <button class="subscribe" type="submit">
               Підписатися<svg class="icon-send">
