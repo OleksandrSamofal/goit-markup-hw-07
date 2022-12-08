@@ -19,21 +19,21 @@ header {
     margin-left: auto;
   }
   
-  .header-nav .item + .item {
+  .header-nav__item + .header-nav__item {
     margin-left: 50px;
   }
   
-  .site-nav .item:not(:last-child) {
+  .site-nav__item:not(:last-child) {
     margin-right: 50px;
   }
-  .site-nav .link-header.current {
+  .site-nav__link-header.current {
     color: $accent-color;
   }
   .site-nav .list {
     display: block;
   }
   
-  .logo {
+  .main-nav__logo{
     color: $secondary-fill;
     font-family: Raleway, sans-serif;
     font-size: 26px;
@@ -43,7 +43,7 @@ header {
     padding-bottom: 25px;
   }
 
-  .logo-color {
+  .main-nav__logo-color {
     color: $accent-color;
   }
 
@@ -52,7 +52,7 @@ header {
     align-items: center;
   }
   
-  .link-header {
+  .site-nav__link-header {
     display: block;
     position: relative;
     color: $main-text-color;
@@ -65,7 +65,7 @@ header {
     /* outline: 1px solid teal; */
   }
   
-  .current.link-header::after {
+  .current.site-nav__link-header::after {
     content: " ";
     display: block;
     position: absolute;
@@ -79,12 +79,12 @@ header {
     transition: opacity 250ms $timing-function;
   }
   
-  .link-header:hover,
-  .link-header:focus {
+  .site-nav__link-header:hover,
+  .site-nav__link-header:focus {
     color: $accent-color;
   }
   
-  .header-mail {
+  .header-nav__mail {
     display: flex;
     color: $secondary-text-color;
     text-decoration: none;
@@ -93,9 +93,27 @@ header {
     line-height: 1.14;
     margin-right: 10px;
     align-self: center;
+    align-items: center;
     /* outline: 2px solid blueviolet; */
   }
-  .header-contact {
+
+  .header-nav__icon{
+    margin-right: 10px;
+  }
+
+.header-nav__tel{
+  display: flex;
+    color: $secondary-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-right: 10px;
+    align-self: center;
+    /* outline: 2px solid blueviolet; */
+}
+
+  .header-nav__contact {
     display: flex;
     color: $secondary-text-color;
     text-decoration: none;
@@ -107,19 +125,27 @@ header {
     /* outline: 2px solid red; */
   }
   
-  .header-contact:hover,
+  .header-nav__contact:hover,
   .icon-envelope:hover,
-  .header-contact:focus {
+  .header-nav__contact:focus {
     color: $accent-color;
     fill: $accent-color;
   }
   
-  .header-mail:hover,
+  .header-nav__mail:hover,
   .icon-smartphone:hover,
-  .header-mail:focus {
+  .header-nav__mail:focus {
     color: $accent-color;
     fill: $accent-color;
   }
+
+.header-nav__tel:hover,
+.icon-smartphone:hover,
+.header-nav__tel:focus {
+  color: $accent-color;
+  fill: $accent-color;
+}
+
 
   .icon-envelope,
 .icon-smartphone {
