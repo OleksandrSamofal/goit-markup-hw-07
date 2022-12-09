@@ -16,12 +16,12 @@
   }
 
   .form-field input,
-.comment {
+.form-field__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
-.comment {
+.form-field__comment {
   padding: 12px 16px;
   resize: none;
 }
@@ -35,8 +35,8 @@
   outline: 1px solid $accent-color;
 }
 
-.comment:hover,
-.comment:focus {
+.form-field__comment:hover,
+.form-field__comment:focus {
   outline: 1px solid $accent-color;
 }
 
@@ -52,7 +52,10 @@
   color: $secondary-text-color;
 }
 
-.form-field .comment::placeholder {
+
+
+
+.form-field__comment::placeholder {
   /* padding-left: 16px;
   padding-top: 12px; */
   color: rgba(117, 117, 117, 0.5);
@@ -63,7 +66,7 @@
   margin-bottom: 30px;
 }
 
-.policyty label {
+.policyty__field {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -166,14 +169,14 @@
     pointer-events: none;
   }
   
-  .icon-modal {
+  .form-field__icon-modal {
     position: absolute;
     width: 20px;
     height: 20px;
     /* color: #188ce8; */
   }
 
-  .icon {
+  .form-field__icon {
     position: absolute;
     bottom: 20px;
     left: 14px;
@@ -183,15 +186,15 @@
     height: 20px;
   }
 
-  .field {
+  .policyty__field {
     display: flex;
     gap: 7px;
-    /* outline: 1px solid greenyellow; */
+    // outline: 1px solid greenyellow;
     align-items: center;
     justify-content: center;
   }
 
-  .icon-checked {
+  .policyty__icon-checked {
     display: inline-block;
     width: 16px;
     height: 15px;
@@ -199,7 +202,7 @@
     border-radius: 2px;
   }
   
-  .checkbox:checked + .icon-checked {
+  .policyty__checkbox:checked + .policyty__icon-checked {
     background-color: $accent-color;
     border-color: $accent-color;
     background-image: url(../image/full-check.svg);
@@ -207,19 +210,19 @@
     background-origin: border-box;
   }
   
-  .form-field:hover > .icon {
+  .form-field:hover > .form-field__icon {
     fill: $accent-color;
   }
   
-  .form-field:focus > .icon {
+  .form-field:focus > .form-field__icon {
     fill: $accent-color;
   }
   
-  .form-input:focus ~ .icon {
+  .form-field__input:focus ~ .form-field__icon {
     fill: $accent-color;
   }
   
-  .checkbox {
+  .policyty__checkbox {
     position: absolute;
     width: 1px;
     height: 1px;
