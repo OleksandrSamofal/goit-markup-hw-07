@@ -78,7 +78,7 @@
     margin-right: 70px;
   }
 
-  .logo-footer {
+  .wrapper__logo-footer {
     display: block;
     color: $main-white-color;
     font-family: 'Raleway';
@@ -87,6 +87,11 @@
     line-height: 1.19;
     text-decoration: none;
     margin-bottom: 20px;
+  }
+
+  
+  .wrapper__logo-color {
+    color: $accent-color;
   }
   
   

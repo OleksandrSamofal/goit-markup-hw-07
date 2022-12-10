@@ -499,12 +499,12 @@ header {
   display: flex;
 }
 
-.feature-list .item {
+.feature-list__item {
   width: 270px;
   margin-right: 30px;
 }
 
-.feature-list .item::before {
+.feature-list__item::before {
   content: "";
   display: block;
   height: 120px;
@@ -532,15 +532,15 @@ header {
   background-image: url(../image/astronaut.svg);
 }
 
-.feature-list .section-title {
+.feature-list__title {
   padding-bottom: 10px;
 }
 
-.feature-list .item:nth-child(4n) {
+.feature-list__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.section-title {
+.feature-list__title {
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -549,7 +549,7 @@ header {
   margin-bottom: 10;
 }
 
-.section-two {
+.feature-list__text {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
@@ -864,7 +864,7 @@ footer {
   margin-right: 70px;
 }
 
-.logo-footer {
+.wrapper__logo-footer {
   display: block;
   color: #ffffff;
   font-family: "Raleway";
@@ -873,6 +873,10 @@ footer {
   line-height: 1.19;
   text-decoration: none;
   margin-bottom: 20px;
+}
+
+.wrapper__logo-color {
+  color: #2196f3;
 }
 
 .form-field-footer {
@@ -1016,7 +1020,15 @@ footer {
   opacity: 1;
 }
 
+.thumb-overlay:focus {
+  opacity: 1;
+}
+
 .link-hero:hover .product-thumb:hover::before {
+  opacity: 1;
+}
+
+.link-hero:focus .product-thumb:hover::before {
   opacity: 1;
 }
 
@@ -1038,7 +1050,15 @@ footer {
   transform: translateY(0);
 }
 
+.link-hero:focus .thumb-overlay {
+  transform: translateY(0);
+}
+
 .link-hero:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.link-hero:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
